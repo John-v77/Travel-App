@@ -6,7 +6,7 @@ const destinations = new mongoose.Schema({
         required: true
     },
     price:{
-        type:Int,
+        type:String,
         required: true
     }
 })

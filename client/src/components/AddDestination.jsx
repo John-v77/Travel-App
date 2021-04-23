@@ -7,7 +7,7 @@ function AddDestination(props) {
         
         //send it to the server
         e.preventDefault()
-        axios.post('http//localhost:5000', {destination})
+        axios.post('http//localhost:5000/addDestination', {destination})
             .then(console.log)
             .catch(console.error)
 
