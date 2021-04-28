@@ -5,7 +5,7 @@ function NavBar(props) {
     return (
         <nav>
             <Link to='/'>Home</Link>
-            <Link to='/'>Page2</Link>
+            <Link to='/AllDestinations'>Page2</Link>
             <Link to='/'>Page3</Link>
         </nav>
     );
