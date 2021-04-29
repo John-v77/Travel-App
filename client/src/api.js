@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const actions ={
     getAllDestinations: async () => {
-        return await axios.get('http://localhost:5000/api/getAllDestinations')
+        return await axios.get('http://localhost:5000/api/AllDestinations')
     },
 
     addItem: async (destination) => {
