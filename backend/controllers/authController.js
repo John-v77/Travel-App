@@ -2,7 +2,12 @@ const UserModel = require('./../model/userModel')
 
 exports.signup = async(req, res, next) => {
     try{
-        const newUser = await UserModel.create(req.body);
+        const newUser = await UserModel.create({
+           name = req.body.name,
+           email = req.body.email,
+           password = req.body.password,
+           passwordConfirm = req.body.passwordConfirm
+        });
 
         res.status(201).json({
             status: 'success',
